@@ -6,11 +6,12 @@ import Head from 'next/head';
 import App from 'next/app';
 import type { AppContext, AppProps } from 'next/app';
 import { Provider } from 'react-redux';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { RootState } from '../store/rootReducer';
 import { initializeStore, useStore } from '../store';
+import { theme } from '../theme';
 
 interface LocalProps extends AppProps {
   initialReduxState: RootState;
@@ -41,7 +42,7 @@ function MyApp({
         <title>Calculadora</title>
       </Head>
       <Provider store={store}>
-        <ThemeProvider theme={createMuiTheme()}>
+        <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <Component {...pageProps} />

@@ -2,7 +2,7 @@ import React from 'react';
 import * as nextImage from 'next/image';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { addDecorator } from '@storybook/react';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { theme } from '../theme';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -23,7 +23,7 @@ Object.defineProperty(nextImage, 'default', {
 });
 
 const Center = ({ children }) => (
-  <ThemeProvider theme={createMuiTheme()}>
+  <ThemeProvider theme={theme}>
     <CssBaseline />
     <div style={{ padding: '20px' }}>{children}</div>
   </ThemeProvider>
