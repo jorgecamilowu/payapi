@@ -5,6 +5,7 @@ const colors = {
   blue: '#36536b',
   lightBlue: '#6c8294',
   darkBlue: '#1b262f',
+  error: '#c62828',
 };
 
 export default colors;

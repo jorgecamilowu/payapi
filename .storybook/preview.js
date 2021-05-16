@@ -2,7 +2,8 @@ import React from 'react';
 import * as nextImage from 'next/image';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { addDecorator } from '@storybook/react';
-import { theme } from '../theme';
+import { useDarkMode } from 'storybook-dark-mode';
+import { lightTheme, darkTheme } from '../theme';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -23,7 +24,7 @@ Object.defineProperty(nextImage, 'default', {
 });
 
 const Center = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={useDarkMode() ? darkTheme : lightTheme}>
     <CssBaseline />
     <div style={{ padding: '20px' }}>{children}</div>
   </ThemeProvider>
