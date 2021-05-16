@@ -1,3 +1,5 @@
+import '@fontsource/dm-serif-display';
+import '@fontsource/public-sans';
 import '../styles/globals.css';
 import { useEffect } from 'react';
 import Head from 'next/head';

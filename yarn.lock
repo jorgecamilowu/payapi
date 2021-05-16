@@ -1246,6 +1246,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/dm-serif-display@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/dm-serif-display/-/dm-serif-display-4.3.0.tgz#65268245b4e402758ace1ee08583d392001f8ebf"
+  integrity sha512-myZvlxwY87iVISmN/O9G4fo10/2wLSYNyLsFJUfZncfQOLB3+q34UMaxSh1u0XMv37dwsSXM0JLM7naX7YthAw==
+
+"@fontsource/public-sans@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/public-sans/-/public-sans-4.3.0.tgz#4fc70dd514e4d3884e4b5da577ce6db61ac1a290"
+  integrity sha512-C8Q3D56FzcImbwWVhaIZ875YTxiI1jxevcujklij0HWgHDDRdiTqwV56FvpH/5ZBr5ik/9ktgzfed9N2DBVVUg==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@hapi/accept/-/accept-5.0.1.tgz"
