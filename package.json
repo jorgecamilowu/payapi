@@ -5,11 +5,51 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "set CI=true&&yarn jest --coverage",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook",
+    "lint:check": "eslint --ext .js,.jsx,.ts,.tsx ./**/*.{js,ts,jsx,tsx}",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./**/*.{js,ts,jsx,tsx}"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@reduxjs/toolkit": "^1.5.1",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.5",
+    "@types/react-redux": "^7.1.16",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "jest": "^26.6.3",
+    "jest-canvas-mock": "^2.3.1",
+    "prettier": "2.3.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
   }
 }
