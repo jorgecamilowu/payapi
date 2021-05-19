@@ -1,18 +1,39 @@
 module.exports = {
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+  setupFiles: ['@testing-library/react/dont-cleanup-after-each'],
+  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'svg'],
+  moduleNameMapper: {
+    '@styles': '<rootDir>/styles',
+    '@components': '<rootDir>/components',
+    '@store': '<rootDir>/store',
+    '@lib': '<rootDir>/lib',
+    '@mocks': '<rootDir>/__mocks__',
+    '@services': '<rootDir>/services',
   },
-  testMatch: ['**/*.(test|spec).(ts|tsx)'],
-  globals: {
-    'ts-jest': {
-      babelConfig: true,
-      tsConfig: 'jest.tsconfig.json',
-      diagnostics: false,
+  collectCoverageFrom: [
+    'components/**/*.{ts,tsx}',
+    'store/**/*.{ts,tsx}',
+    '!__mocks__/**/*.{ts,tsx}',
+    '!models/**/*.{ts,tsx}',
+    '!store/index.ts',
+    '!store/rootReducer.ts',
+    '!store/ThunkTypes.ts',
+    '!styles/**/*.{js,ts}',
+    '!pages/_app.tsx',
+    '!pages/_document.tsx',
+    '!pages/**/*.{ts,tsx}',
+    '!/node_modules/',
+    '!./**/styles.{ts,tsx,css,sass}',
+    '!./**/index.{ts,tsx}',
+    '!./**/*.stories.tsx',
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 90,
+      lines: 90,
     },
   },
-  coveragePathIgnorePatterns: ['/node_modules/', 'setupTests.ts'],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
-  coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
-  moduleNameMapper: {},
+  coverageReporters: ['json', 'lcov', 'text', 'clover'],
 };

@@ -1,0 +1,8 @@
+node_modules
+.next
+public
+next-env.d.ts
+babel.config.js
+setupTests.ts
+jest.config.js
+coverage
