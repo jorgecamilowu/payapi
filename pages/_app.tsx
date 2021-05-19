@@ -1,7 +1,7 @@
 import '@fontsource/dm-serif-display';
 import '@fontsource/public-sans';
 import '../styles/globals.css';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import App from 'next/app';
 import type { AppContext, AppProps } from 'next/app';

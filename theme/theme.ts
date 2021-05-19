@@ -2,8 +2,7 @@ import { createMuiTheme, lighten } from '@material-ui/core/styles';
 
 import colors from './colors';
 
-const { blue, darkPink, lightPink, white, darkBlue, error } = colors;
-const lightBlue = lighten(blue, 0.5);
+const { blue, lightBlue, darkPink, lightPink, white, darkBlue, error } = colors;
 
 const theme = createMuiTheme({
   typography: {

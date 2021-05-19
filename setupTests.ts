@@ -1,7 +1,6 @@
-import '@testing-library/jest-dom/extend-expect'
-import 'jest-canvas-mock'
-import enzyme from 'enzyme'
+import 'jest-canvas-mock';
+import { configure } from 'enzyme';
 
-const Adapter = require('@wojtekmaj/enzyme-adapter-react-17')
+const Adapter = require('@wojtekmaj/enzyme-adapter-react-17');
 
-enzyme.configure({ adapter: new Adapter() })
+configure({ adapter: new Adapter() });
