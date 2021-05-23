@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import InputWithButton from '../components/InputWithButton';
 
 export default {
-  title: 'Design System/Input with button',
+  title: 'Components/Input with button',
   component: InputWithButton,
 };
 
