@@ -26,7 +26,7 @@ Object.defineProperty(nextImage, 'default', {
 const Center = ({ children }) => (
   <ThemeProvider theme={useDarkMode() ? darkTheme : lightTheme}>
     <CssBaseline />
-    <div style={{ padding: '20px' }}>{children}</div>
+    <div>{children}</div>
   </ThemeProvider>
 );
 
