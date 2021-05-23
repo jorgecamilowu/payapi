@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Typography from '@material-ui/core/Typography';
@@ -158,7 +158,7 @@ interface HeaderProps {
 }
 
 /** Header that is responsive for desktop, tablet and phone */
-const Header: FC<HeaderProps> = ({ onCTAClick }): JSX.Element => {
+const Header = ({ onCTAClick }: HeaderProps): JSX.Element => {
   const [drawerState, toggleDrawer] = useState(false);
   const classes = useStyles();
   return (

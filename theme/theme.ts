@@ -27,6 +27,7 @@ const theme = createMuiTheme({
       h1: {
         fontFamily: 'MD Serif Display',
         fontSize: '72px',
+        fontWeight: 'bold',
         lineHeight: '72px',
         color: blue,
       },
