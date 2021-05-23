@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Partners from '../components/sections/Partners';
 
 export default {
-  title: 'Main Page Sections/Partners',
+  title: 'Home Page Sections/Partners',
   component: Partners,
 };
 
