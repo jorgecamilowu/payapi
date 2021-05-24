@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { ObjectSchema, object, string } from 'yup';
 
 /**

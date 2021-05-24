@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import Image from 'next/image';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { colors } from '../../../theme';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: 'center',
       justifyContent: 'center',
       gap: theme.spacing(0, 2),
+      backgroundColor: colors.white,
       [theme.breakpoints.down('md')]: {
         flexFlow: 'column',
       },
@@ -46,11 +47,10 @@ export default function EasyImplementation(): ReactElement {
   return (
     <div className={classes.root}>
       <div>
-        <Image
+        <img
           className={classes.img}
           src="/home/desktop/illustration-easy-to-implement.svg"
           alt="easy-to-implement-illustration"
-          layout="fill"
         />
       </div>
       <div className={classes.textBlock}>

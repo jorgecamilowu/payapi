@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: 'center',
       textAlign: 'center',
       gap: theme.spacing(4, 0),
-      maxWidth: theme.spacing(27.875),
+      maxWidth: theme.spacing(43),
       [theme.breakpoints.down('xs')]: {
         maxWidth: '90vw',
       },

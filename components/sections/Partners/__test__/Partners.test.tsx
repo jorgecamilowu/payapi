@@ -43,85 +43,35 @@ describe('snapshot test suite', () => {
           <div
             class="makeStyles-logoBlock-3"
           >
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                color="#fff"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-            >
-              <noscript />
-              <img
-                class="makeStyles-icon-5"
-                decoding="async"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-              />
-            </div>
-          </div>
-          <div
-            style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
-          >
-            <noscript />
             <img
-              class="makeStyles-bgCircle-9"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              class="makeStyles-icon-5"
+              src="/shared/desktop/tesla.svg"
+            />
+            <img
+              class="makeStyles-icon-5"
+              src="/shared/desktop/microsoft.svg"
+            />
+            <img
+              class="makeStyles-icon-5"
+              src="/shared/desktop/hewlett-packard.svg"
+            />
+            <img
+              class="makeStyles-icon-5"
+              src="/shared/desktop/oracle.svg"
+            />
+            <img
+              class="makeStyles-icon-5"
+              src="/shared/desktop/google.svg"
+            />
+            <img
+              class="makeStyles-icon-5"
+              src="/shared/desktop/nvidia.svg"
             />
           </div>
+          <img
+            class="makeStyles-bgCircle-9"
+            src="/shared/desktop/bg-pattern-circle.svg"
+          />
         </div>
       </div>
     `);

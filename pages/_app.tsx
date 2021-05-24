@@ -11,7 +11,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { RootState } from '../store/rootReducer';
 import { initializeStore, useStore } from '../store';
-import { theme } from '../theme';
+import { lightTheme } from '../theme';
 
 interface LocalProps extends AppProps {
   initialReduxState: RootState;
@@ -31,7 +31,6 @@ function MyApp({
     }
   }, []);
 
-  const store = useStore(initialReduxState);
   return (
     <>
       <Head>
@@ -39,15 +38,13 @@ function MyApp({
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <title>Calculadora</title>
+        <title>Pay Api</title>
       </Head>
-      <Provider store={store}>
-        <ThemeProvider theme={theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Provider>
+      <ThemeProvider theme={lightTheme}>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

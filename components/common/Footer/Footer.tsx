@@ -16,10 +16,10 @@ const useStyles = makeStyles((theme: Theme) =>
       position: 'relative',
       display: 'flex',
       alignItems: 'center',
+      overflow: 'hidden',
       height: theme.spacing(12.5),
       backgroundColor: colors.darkBlue,
-      padding: theme.spacing(0, 6),
-      overflow: 'hidden',
+      padding: theme.spacing(2, 6),
       [theme.breakpoints.down('xs')]: {
         height: theme.spacing(46.8),
         flexFlow: 'column',
@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down('xs')]: {
         top: '51%',
         left: '50%',
-        transform: 'translateX(-68%)',
+        transform: 'translateX(-65%)',
       },
     },
   }),
@@ -76,34 +76,36 @@ const useStyles = makeStyles((theme: Theme) =>
 const Footer: FC = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <div className={classes.bgCircle}>
-        <Image src="/shared/desktop/bg-pattern-circle.svg" layout="fill" />
-      </div>
-      <div className={classes.logo}>
-        <Image src="/shared/desktop/logo-light.svg" width={135} height={38} />
-      </div>
-      <div className={classes.links}>
-        {links.map((link) => (
-          <div key={`link-${link.text}`} className={classes.link}>
-            <ListItem button>
-              <Link href={link.href}>
-                <Typography variant="body1">{link.text}</Typography>
-              </Link>
-            </ListItem>
-          </div>
-        ))}
-      </div>
-      <div className={classes.iconItems}>
-        <IconButton className={classes.icon}>
-          <Image src="/shared/desktop/facebook.svg" height={24} width={24} />
-        </IconButton>
-        <IconButton className={classes.icon}>
-          <Image src="/shared/desktop/twitter.svg" height={24} width={24} />
-        </IconButton>
-        <IconButton className={classes.icon}>
-          <Image src="/shared/desktop/linkedin.svg" height={24} width={24} />
-        </IconButton>
+    <div>
+      <div className={classes.root}>
+        <div className={classes.bgCircle}>
+          <img src="/shared/desktop/bg-pattern-circle.svg" />
+        </div>
+        <div className={classes.logo}>
+          <Image src="/shared/desktop/logo-light.svg" width={135} height={38} />
+        </div>
+        <div className={classes.links}>
+          {links.map((link) => (
+            <div key={`link-${link.text}`} className={classes.link}>
+              <ListItem button>
+                <Link href={link.href}>
+                  <Typography variant="body1">{link.text}</Typography>
+                </Link>
+              </ListItem>
+            </div>
+          ))}
+        </div>
+        <div className={classes.iconItems}>
+          <IconButton className={classes.icon}>
+            <Image src="/shared/desktop/facebook.svg" height={24} width={24} />
+          </IconButton>
+          <IconButton className={classes.icon}>
+            <Image src="/shared/desktop/twitter.svg" height={24} width={24} />
+          </IconButton>
+          <IconButton className={classes.icon}>
+            <Image src="/shared/desktop/linkedin.svg" height={24} width={24} />
+          </IconButton>
+        </div>
       </div>
     </div>
   );
