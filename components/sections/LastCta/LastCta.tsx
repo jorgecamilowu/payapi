@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
+import { colors } from '../../../theme';
 import InputWithButton from '../../InputWithButton';
 import makeValidationSchema from './makeLastCtaValidationSchema';
 
@@ -11,8 +12,10 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       display: 'flex',
       height: theme.spacing(12.5),
-      justifyContent: 'space-between',
+      justifyContent: 'space-around',
       alignItems: 'center',
+      backgroundColor: colors.white,
+      margin: theme.spacing(5, 0),
       [theme.breakpoints.down('md')]: {
         flexFlow: 'column',
         height: theme.spacing(25),

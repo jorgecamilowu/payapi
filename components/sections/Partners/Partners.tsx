@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import clsx from 'clsx';
-import Image from 'next/image';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -65,6 +64,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     btn: {
       width: theme.spacing(16.125),
+      zIndex: 1,
     },
     title: {
       [theme.breakpoints.down('xs')]: {
@@ -118,41 +118,18 @@ export default function Partners(): ReactElement {
         </Button>
       </div>
       <div className={classes.logoBlock}>
-        <Image
-          src="/shared/desktop/tesla.svg"
-          layout="fill"
-          color="#fff"
-          className={classes.icon}
-        />
-        <Image
-          src="/shared/desktop/microsoft.svg"
-          layout="fill"
-          className={classes.icon}
-        />
-        <Image
+        <img src="/shared/desktop/tesla.svg" className={classes.icon} />
+        <img src="/shared/desktop/microsoft.svg" className={classes.icon} />
+        <img
           src="/shared/desktop/hewlett-packard.svg"
-          layout="fill"
           className={classes.icon}
         />
-        <Image
-          src="/shared/desktop/oracle.svg"
-          layout="fill"
-          className={classes.icon}
-        />
-        <Image
-          src="/shared/desktop/google.svg"
-          layout="fill"
-          className={classes.icon}
-        />
-        <Image
-          src="/shared/desktop/nvidia.svg"
-          layout="fill"
-          className={classes.icon}
-        />
+        <img src="/shared/desktop/oracle.svg" className={classes.icon} />
+        <img src="/shared/desktop/google.svg" className={classes.icon} />
+        <img src="/shared/desktop/nvidia.svg" className={classes.icon} />
       </div>
-      <Image
+      <img
         src="/shared/desktop/bg-pattern-circle.svg"
-        layout="fill"
         className={classes.bgCircle}
       />
     </div>

@@ -1,24 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import { useFormik } from 'formik';
 import InputWithButton from '../../InputWithButton';
 import makeValidationSchema from './makeValidationSchema';
+import { colors } from '../../../theme';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'space-evenly',
       padding: '32px 10%',
+      overflow: 'hidden',
+      backgroundColor: colors.white,
       [theme.breakpoints.down('md')]: {
         flexFlow: 'column',
       },
     },
     leftBlock: {
-      flex: 1,
       display: 'flex',
       flexFlow: 'column',
       [theme.breakpoints.down('md')]: {
@@ -28,7 +29,6 @@ const useStyles = makeStyles((theme: Theme) =>
     item: {
       margin: theme.spacing(3, 0),
       [theme.breakpoints.down('md')]: {
-        flex: 1,
         display: 'flex',
         justifyContent: 'center',
       },
@@ -116,11 +116,10 @@ const Main = ({ onCallToAction }: Props): JSX.Element => {
         </div>
       </div>
       <div className={`${classes.item} ${classes.phoneContainer}`}>
-        <Image
+        <img
           className={classes.phone}
           src="/home/desktop/illustration-phone-mockup.svg"
           alt="mobile-mockup"
-          layout="fill"
         />
       </div>
     </div>
