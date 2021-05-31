@@ -35,6 +35,7 @@ const theme = createMuiTheme({
       subtitle1: {
         fontFamily: 'MD Serif Display',
         fontSize: '56px',
+        fontWeight: 'bold',
         lineHeight: '56px',
         color: blue,
       },
@@ -48,6 +49,7 @@ const theme = createMuiTheme({
       h3: {
         fontFamily: 'MD Serif Display',
         fontSize: '32px',
+        fontWeight: 'bold',
         lineHeight: '40px',
         color: blue,
       },
@@ -127,6 +129,22 @@ export const lightTheme = createMuiTheme({
           color: darkBlue,
           backgroundColor: white,
           border: `1px solid ${white}`,
+        },
+        '&:disabled': {
+          color: lightBlue,
+          border: `1px solid ${lightBlue}`,
+        },
+      },
+      outlinedSecondary: {
+        borderRadius: 100,
+        fontWeight: 'bold',
+        textTransform: 'none',
+        color: blue,
+        border: `1px solid ${blue}`,
+        '&:hover': {
+          color: white,
+          backgroundColor: blue,
+          border: `1px solid ${blue}`,
         },
         '&:disabled': {
           color: lightBlue,

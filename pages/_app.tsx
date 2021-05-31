@@ -3,25 +3,15 @@ import '@fontsource/public-sans';
 import '../styles/globals.css';
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import App from 'next/app';
-import type { AppContext, AppProps } from 'next/app';
-import { Provider } from 'react-redux';
+import type { AppProps } from 'next/app';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-import { RootState } from '../store/rootReducer';
-import { initializeStore, useStore } from '../store';
 import { lightTheme } from '../theme';
 
-interface LocalProps extends AppProps {
-  initialReduxState: RootState;
-}
+type LocalProps = AppProps;
 
-function MyApp({
-  Component,
-  pageProps,
-  initialReduxState,
-}: LocalProps): JSX.Element {
+function MyApp({ Component, pageProps }: LocalProps): JSX.Element {
   /** This is needed for Material-UI setup */
   useEffect(() => {
     // Remove the server-side injected CSS.
@@ -48,15 +38,5 @@ function MyApp({
     </>
   );
 }
-
-MyApp.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await App.getInitialProps(appContext);
-  const reduxStore = initializeStore();
-
-  return {
-    ...appProps,
-    initialReduxState: reduxStore.getState(),
-  };
-};
 
 export default MyApp;
