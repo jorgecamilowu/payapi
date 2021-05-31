@@ -168,12 +168,14 @@ const Header = ({ onCTAClick }: HeaderProps): JSX.Element => {
           <Grid container alignItems="center" justify="space-between">
             <Box>
               <Grid item xs container alignItems="center">
-                <Image
-                  src="/shared/desktop/logo.svg"
-                  width={135}
-                  height={38}
-                  className={classes.logo}
-                />
+                <IconButton href="/">
+                  <Image
+                    src="/shared/desktop/logo.svg"
+                    width={135}
+                    height={38}
+                    className={classes.logo}
+                  />
+                </IconButton>
                 <Hidden xsDown>
                   <List className={classes.list}>{mapLinks()}</List>
                 </Hidden>
