@@ -51,7 +51,7 @@ describe('functional test suite', () => {
     render(makeView());
     userEvent.type(screen.getByRole('textbox'), 'test@test.com');
     userEvent.click(screen.getByRole('button'));
-    waitFor(() => {
+    await waitFor(() => {
       expect(mockOnCTA).toHaveBeenCalled();
     });
   });
@@ -105,6 +105,9 @@ describe('snaptshot test suite', () => {
                   >
                     Schedule a Demo
                   </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
                 </button>
                 <p
                   class="MuiFormHelperText-root makeStyles-helperTextOffset-10"
