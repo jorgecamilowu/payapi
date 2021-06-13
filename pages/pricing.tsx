@@ -1,12 +1,13 @@
 import React, { ReactElement } from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 import { mockBenefitsCatalog, mockPricingPlan } from '../__mocks__';
 // subcomponents
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import PricingPlanContainer from '../components/PricingPlanContainer';
-import { Typography } from '@material-ui/core';
+import LastCta from '../components/sections/LastCta';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -71,6 +72,13 @@ export default function Pricing(): ReactElement {
               catalog={mockBenefitsCatalog}
             />
           </div>
+        </div>
+        <div>
+          <LastCta
+            onCTA={() => {
+              // empty stub
+            }}
+          />
         </div>
       </div>
       <Footer />
